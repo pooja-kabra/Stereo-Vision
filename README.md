@@ -7,11 +7,12 @@ This is a glimpse of the results obtained!
   <img src="https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res1/plot.png" alt="Dataset 1" width = "864" height = "576"/>
 </p>
 
+<p align="center">
+  <img src="https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res2/plot.png" alt="Dataset 2" width = "864" height = "576"/>
+</p>
 
-![Dataset 2](https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res2/plot.png?style=centerme)
-*Dataset 2*
-
-![Dataset 3](https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res3/plot.png?style=centerme)
-*Dataset 3*
+<p align="center">
+  <img src="https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res3/plot.png" alt="Dataset 3" width = "864" height = "576"/>
+</p>
 
 See report for implementation details!
