@@ -4,8 +4,7 @@ Created depth from stereo images
 This is a glimpse of the results obtained!
 
 <p align="center">
-  <img src="https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res1/plot.png" />
-  *Dataset 1*
+  <img src="https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res1/plot.png" alt="Dataset 1" width = "624" height = "419"/>
 </p>
 
 
