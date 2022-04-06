@@ -25,8 +25,7 @@ class StereoCam:
         
         self.F, pts_l, pts_r = self.findFundamentalMatrix(img_l, img_r)
         self.E = self.findEssentialMatrix()
-        self.R_l, self.t_l = self.findPose(self.E, self.K_l)
-        self.R_r, self.t_r = self.findPose(self.E, self.K_r)
+        self.R, self.t = self.findPose()
         self.H_l, self.H_r = self.rectifyUncalibrated(pts_l, pts_r)
     
     def findGoodCorrespondences(self, img_l, img_r, count):
@@ -101,8 +100,8 @@ class StereoCam:
         E = np.matmul(np.transpose(self.K_r),np.matmul(self.F, self.K_l))
         return E
     
-    def findPose(E,K):
-        U, S, VT = np.linalg.svd(E)
+    def findPose(self):
+        U, S, VT = np.linalg.svd(self.E)
         W = np.array([[0, -1, 0], [1, 0, 0], [0, 0, 1]])
         W_inv = np.linalg.inv(W)
         R = np.matmul(np.matmul(U, W_inv), VT)
