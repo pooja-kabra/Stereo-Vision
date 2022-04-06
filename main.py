@@ -15,8 +15,8 @@ import imutils
 RESIZE_RATIO = 4.79
 
 def main():
-    img0 =cv.imread("im0.png")
-    img1 =cv.imread("im1.png")
+    img0 =cv.imread("datasets\ds1\im0.png")
+    img1 =cv.imread("datasets\ds1\im1.png")
     h0, w0,_ = img0.shape
     H = int(h0/RESIZE_RATIO)
     W = int(w0/RESIZE_RATIO)
