@@ -12,7 +12,7 @@ from imageProcess import normalize
 import imutils
 
 
-RESIZE_RATIO = 10 #4.79
+RESIZE_RATIO = 4.79
 
 def main():
     img0 =cv.imread("im0.png")
@@ -37,7 +37,6 @@ def main():
 
     
     fig = plt.figure()
-    plt.tick_params(left=False, bottom=False)
     
     ax = fig.add_subplot(2, 2, 1)
     imgplot = plt.imshow(img0)
@@ -48,13 +47,20 @@ def main():
     ax.set_title('Right Image')
     
     ax = fig.add_subplot(2, 2, 3)
-    imgplot = plt.imshow(disparity_map, cmap="hot")
+    imgplot = plt.imshow(disparity_map, cmap="jet")
     ax.set_title('Disparity')
     
     
     ax = fig.add_subplot(2, 2, 4)
-    imgplot = plt.imshow(depth_map, cmap="hot")
+    imgplot = plt.imshow(depth_map, cmap="jet")
     ax.set_title('Depth')
+    
+    plt.subplots_adjust(left=0.1,
+                    bottom=0.1, 
+                    right=0.9, 
+                    top=0.9, 
+                    wspace=0.4, 
+                    hspace=0.4)
     
     plt.savefig("Depth from Stereo")
 
