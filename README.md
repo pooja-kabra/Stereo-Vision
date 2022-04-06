@@ -5,8 +5,9 @@ This is a glimpse of the results obtained!
 
 <p align="center">
   <img src="https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res1/plot.png" />
+  *Dataset 1*
 </p>
-*Dataset 1*
+
 
 ![Dataset 2](https://github.com/pooja-kabra/Stereo-Vision/blob/main/results/res2/plot.png?style=centerme)
 *Dataset 2*
