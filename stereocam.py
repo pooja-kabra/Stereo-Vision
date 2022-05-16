@@ -90,9 +90,7 @@ class StereoCam:
             if abs(new_min_zero)< min_zero:
                 min_zero = new_min_zero
                 F = F_iter
-        F_iter= np.array([[2.45669299*pow(10,-6), -7.66313507*pow(10,-5),  3.46524708*pow(10,-2)],
-                  [ 7.82618730*pow(10,-5),  5.01377959*pow(10,-6), -1.35213400*pow(10,10)],
-                  [-3.62422345*pow(10,-2),  1.35213400*pow(10,10),  1.00000000]])
+
         return F_iter, pts_l, pts_r
     
     
